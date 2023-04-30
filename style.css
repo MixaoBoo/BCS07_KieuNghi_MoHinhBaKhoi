@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  background: linear-gradient(to right, #e37f7f, #6d6df0);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.header__item {
+  background: linear-gradient(to right, #f5e6ad, #f13c77);
+  font-weight: 600;
+}
+.card {
+  width: 100%;
+  margin: auto;
+}
+

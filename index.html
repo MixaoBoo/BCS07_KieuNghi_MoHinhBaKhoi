@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BÀI TẬP MÔ HÌNH 3 KHỐI</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1 class="header">BÀI TẬP JAVASCRIPT BUỔI 2 - 3</h1>
+
+    <section>
+      <div class="container">
+        <div class="row py-5">
+          <!-- TÍNH TIỀN LƯƠNG NHÂN VIÊN -->
+          <div class="col-6 mb-5">
+            <div class="card rounded">
+              <div
+                class="header__item card-header text-center bg-black text-white"
+              >
+                TÍNH TIỀN LƯƠNG
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="luongMotNgay" class="form-label"
+                    >Lương một ngày</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="luongMotNgay"
+                    disabled
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="soNgayLam" class="form-label">Số ngày làm</label>
+                  <input type="text" class="form-control" id="soNgayLam" />
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary" id="btnCalc">
+                    TÍNH NÀO !
+                  </button>
+                </div>
+                <div
+                  class="card-footer text-muted d-none"
+                  id="hienThiTienLuong"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- TÍNH GIÁ TRỊ TRUNG BÌNH -->
+          <div class="col-6 mb-5">
+            <div class="card rounded">
+              <div
+                class="header__item card-header text-center bg-black text-white"
+              >
+                TÍNH TRUNG BÌNH
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <p>Nhập 5 số thực mà bạn muốn tính trung bình</p>
+                  <label for="soThuc1" class="form-label"
+                    >Số thực 1:</label
+                  >
+                  <input type="text" class="form-control" id="soThuc1" />
+                  <label for="soThuc1" class="form-label"
+                    >Số thực 2:</label
+                  >
+                  <input type="text" class="form-control" id="soThuc2" />
+                  <label for="soThuc1" class="form-label"
+                    >Số thực 3:</label
+                  >
+                  <input type="text" class="form-control" id="soThuc3" />
+                  <label for="soThuc1" class="form-label"
+                    >Số thực 4:</label
+                  >
+                  <input type="text" class="form-control" id="soThuc4" />
+                  <label for="soThuc1" class="form-label"
+                    >Số thực 5:</label
+                  >
+                  <input type="text" class="form-control" id="soThuc5" />
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary" id="btnCalc2">
+                    TÍNH NÀO !
+                  </button>
+                </div>
+                <div
+                  class="card-footer text-muted d-none"
+                  id="hienThiTrungBinhTong"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!--  QUY ĐỔI TIỀN -->
+          <div class="col-6 mb-5">
+            <div class="card rounded">
+              <div
+                class="header__item card-header text-center bg-black text-white"
+              >
+                QUY ĐỔI TIỀN
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="quyDoiTien" class="form-label"
+                    >NHẬP SỐ TIỀN BẠN MUỐN QUY ĐỔI TỪ USD SANG VND</label
+                  >
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tienUsd"
+                      aria-label="Dollar amount (with dot and two decimal places)"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary" id="btnCalc3">QUY ĐỔI</button>
+                </div>
+                <div
+                  class="card-footer text-muted d-none"
+                  id="hienThiTienQuyDoi"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT -->
+          <div class="col-6 mb-5">
+            <div class="card rounded">
+              <div
+                class="header__item card-header text-center bg-black text-white"
+              >
+                TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="chieuDai" class="form-label"
+                    >Chiều dài (cm)</label
+                  >
+                  <input type="text" class="form-control" id="chieuDai" />
+                </div>
+                <div class="mb-3">
+                  <label for="chieuRong" class="form-label"
+                    >Chiều rộng (cm)</label
+                  >
+                  <input type="text" class="form-control" id="chieuRong" />
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary" id="btnCalc4">
+                    TÍNH NÀO !
+                  </button>
+                </div>
+                <div
+                  class="card-footer text-muted d-none"
+                  id="hienThiKetQua"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- TÍNH TỔNG HAI KÝ SỐ -->
+          <div class="col-6 mb-5">
+            <div class="card rounded">
+              <div
+                class="header__item card-header text-center bg-black text-white"
+              >
+                TÍNH TỔNG HAI KÝ SỐ
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="soHaiChuSo" class="form-label"
+                    >Nhập vào số có hai chữ số</label
+                  >
+                  <input type="text" class="form-control" id="soHaiChuSo" />
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary" id="btnCalc5">
+                    TÍNH NÀO !
+                  </button>
+                </div>
+                <div
+                  class="card-footer text-muted d-none"
+                  id="hienThiTongHaiKySo"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
